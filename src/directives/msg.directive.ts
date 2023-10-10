@@ -1,8 +1,12 @@
 import { Directive, TemplateRef, ViewContainerRef, Input } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @Directive({
 	selector: '[msgLoop]',
-	standalone: true
+	standalone: true,
+
+
 })
 export class MsgDirective {
 	constructor(private templateRef: TemplateRef<any>,

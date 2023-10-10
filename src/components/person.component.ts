@@ -8,7 +8,8 @@ import { RouterModule } from "@angular/router";
   standalone: true,
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    
   ],
   templateUrl: 'person.component.html',
   styleUrls: ['person.component.css']

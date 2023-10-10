@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import { switchMap } from 'rxjs/operators';
 import { Person } from '../services/person';
 import { PersonService } from '../services/person.service';
+import { AppModule } from 'src/AppModule';
 
 @Component({
     standalone: true,
-    imports: [CommonModule],
+    imports: [CommonModule,AppModule],
     template: `
     <div *ngIf="person">
       <h3>Details</h3>
